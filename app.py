@@ -22,7 +22,7 @@ def index():
     taxas = obter_taxas_de_cambio()
 
     if taxas is None:
-        return render_template('index.html' error="Não foi possível conectar à API de Câmbio.")
+        return render_template('index.html', error="Não foi possível conectar à API de Câmbio.")
     
     moedas_disponiveis = sorted(taxas.keys())
 

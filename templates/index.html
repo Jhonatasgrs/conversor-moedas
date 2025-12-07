@@ -20,7 +20,7 @@
                     <input type="number" id="valor" name="valor" step="0.01" required min="0.01">
 
                     <label for="moeda_origem">Converter De:</label>
-                    <select name="moeda_origem" id="moeda_origem" required>
+                    <select id="moeda_origem" name="moeda_origem" required>
                         {% for moeda in moedas %}
                             <option value="{{ moeda }}">
                                 {{ moeda }}
@@ -28,10 +28,9 @@
                         {% endfor %}
                     </select>
 
-                    <label for="moeda_destino">Converter Para:</label>
-                    <select name="moeda_destino" id="moeda_destino">
+                    <select id="moeda_destino" name="moeda_destino" required>
                         {% for moeda in moedas %}
-                            <option value="{{ moedas }}">
+                            <option value="{{ moeda }}">
                                 {{ moeda }}
                             </option>
                         {% endfor %}

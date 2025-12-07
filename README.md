@@ -2,8 +2,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.3-green)
-![License](https://img.shields.io/badge/License-MIT-orange)
 ![API](https://img.shields.io/badge/API-ExchangeRate--API-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-orange)
 
 Este projeto é um conversor de moedas simples baseado em uma interface web, desenvolvido com Python e o micro-framework Flask. Ele demonstra a integração com uma API pública para buscar taxas de câmbio em tempo real e realizar cálculos de conversão.
 

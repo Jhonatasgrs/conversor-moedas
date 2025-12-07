@@ -3,7 +3,8 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-API_URL = "https://open.er-api.com/v6/latest/BRL"
+MOEDA_BASE = "BRL"
+API_URL = f"https://open.er-api.com/v6/latest/{MOEDA_BASE}"
 
 def obter_taxas_de_cambio():
     try:
@@ -55,7 +56,8 @@ def index():
         'index.html',
         moedas=moedas_disponiveis,
         valor_convertido=valor_convertido,
-        erro=erro_conversao
+        erro=erro_conversao,
+        moeda_base=MOEDA_BASE
     )
 
 if __name__ == '__main__':

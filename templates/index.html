@@ -40,7 +40,7 @@
 
                 {% if valor_convertido %}
                     <div class="resultado">
-                        O valor convertido é: **{{ valor_convertido }} {{ request.form['moeda_destino'] }}**
+                        O valor convertido é: {{ valor_convertido }} {{ request.form['moeda_destino'] }}
                     </div>
                 {% elif erro %}
                     <div class="erro">
@@ -49,7 +49,7 @@
                 {% endif %}
             {% endif %}
 
-            <p style="font-size: 0.8em; margin-top: 15px; text-align: center;">Taxas baseadas em: **{{ moeda_base }}**</p>
+            <p style="font-size: 0.8em; margin-top: 15px; text-align: center;">Taxas baseadas em: {{ moeda_base }}</p>
         </div>   
     </body>
 </html>
